@@ -57,10 +57,9 @@ export const People: React.FC<{}> = () => {
     },
   });
 
-  const pageCount = useMemo(
-    () => Math.ceil(data?.peopleData?.count / NO_PAGE_ITEMS),
-    [data?.peopleData?.count]
-  );
+  const pageCount = useMemo(() => Math.ceil(data?.peopleData?.count / NO_PAGE_ITEMS), [
+    data?.peopleData?.count,
+  ]);
 
   const [activeSnackbar, setActiveSnackbar] = useState(false);
 
