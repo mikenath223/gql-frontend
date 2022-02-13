@@ -39,6 +39,7 @@ export const InnerHeaderWrapper = styled.div`
   @media screen and (max-width: 480px) {
     padding: 0 4%;
     margin: 0 1%;
+    flex-direction: column;
   }
 `;
 
